@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Eudoxus Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #272727;
+    color: #f3f3f3;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e2ff52;
+}
+
+#products:hover::-webkit-scrollbar {
+    display: block;
+}
+
+#product:hover::-webkit-scrollbar {
+    display: block;
+}
+
+#cart:hover::-webkit-scrollbar {
+    display: block;
+}
+
+#categories::-webkit-scrollbar {
+    display: block;
+}
+
+#categoriesInModal::-webkit-scrollbar {
+    display: block;
+}
+
+#dropdownContent::-webkit-scrollbar {
+    display: block;
+}
+
+input:invalid[focused="true"] ~ span {
+    display: block;
+}
+
+input:invalid[focused="true"] {
+    border: 1px solid #ff5555;
+}
